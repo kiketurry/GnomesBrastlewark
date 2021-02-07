@@ -1,0 +1,18 @@
+<resources>
+    <string name="accept">Aceptar</string>
+    <string name="loading">Cargando</string>
+    <string name="toolbarDetailGnome">Gnomo</string>
+    <string name="toolbarGnomeList">Listado</string>
+
+    <string name="gnomeAge">Edad: %1$s</string>
+    <string name="gnomeHeight">Altura: %1$s</string>
+    <string name="gnomeWeight">Peso: %1$s</string>
+    <string name="gnomeHair">Pelo:</string>
+    <string name="gnomeSexMale">Varón</string>
+    <string name="gnomeSexFemale">Mujer</string>
+    <string name="gnomeSexHermaphrodite">Hermafrodita</string>
+    <string name="gnomeProfessions">Profesiones:</string>
+    <string name="gnomeFriends">Amigos:</string>
+    <string name="search">Buscar...</string>
+    <string name="filterGnomeEmptyMessage">No hemos encontrado ningún gnomo con ese nombre o parecido</string>
+</resources>

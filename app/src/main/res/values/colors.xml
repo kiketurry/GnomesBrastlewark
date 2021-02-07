@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42a5f5</color>
+    <color name="colorPrimaryVariant">#0077c2</color>
+    <color name="colorOnPrimary">#80d6ff</color>
+    <color name="colorSecondary">#fbc02d</color>
+    <color name="colorSecondaryVariant">#c49000</color>
+    <color name="colorOnSecondary">#fff263</color>
+    <color name="statusBarColor">@color/colorPrimaryVariant</color>
+    <color name="textColorDefault">#000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="basic_grey">#dedede</color>
+    <color name="whiteTransparent">#AAFFFFFF</color>
+    <color name="backgroundLoading">#CC000000</color>
+
+    <color name="gnomeHairColorCodePink">#EF23E2</color>
+    <color name="gnomeHairColorCodeGreen">#00FF00</color>
+    <color name="gnomeHairColorCodeRed">#FF0000</color>
+    <color name="gnomeHairColorCodeBlack">#000000</color>
+    <color name="gnomeHairColorCodeGray">#666666</color>
+    <color name="gnomeHairColorCodeUnknow">#FFFFFF</color>
+</resources>

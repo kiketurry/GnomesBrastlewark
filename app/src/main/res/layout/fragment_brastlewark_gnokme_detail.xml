@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivGnome"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/detailGnomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivGnome"
+            tools:text="Nombre del gnome" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/detailGnomeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toStartOf="@id/tvHeight"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            tools:text="Edad: 154" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            style="@style/detailGnomeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tvWeight"
+            app:layout_constraintStart_toEndOf="@id/tvAge"
+            app:layout_constraintTop_toTopOf="@id/tvAge"
+            tools:text="Altura: 107.75" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            style="@style/detailGnomeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvHeight"
+            app:layout_constraintTop_toTopOf="@id/tvAge"
+            tools:text="Peso: 39.06" />
+
+        <TextView
+            android:id="@+id/tvHair"
+            style="@style/detailGnomeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@id/tvAge"
+            app:layout_constraintTop_toBottomOf="@id/tvAge"
+            app:layout_goneMarginTop="12dp"
+            android:text="@string/gnomeHair" />
+
+        <View
+            android:id="@+id/vwColorHair"
+            style="@style/detailGnomeData"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvHair"
+            app:layout_constraintStart_toEndOf="@id/tvHair"
+            app:layout_constraintTop_toTopOf="@id/tvHair"
+            tools:text="Altura: 107.75" />
+
+        <TextView
+            android:id="@+id/tvSex"
+            style="@style/detailGnomeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="8dp"
+            app:drawableStartCompat="@drawable/ic_male"
+            app:layout_constraintEnd_toEndOf="@id/tvWeight"
+            app:layout_constraintTop_toBottomOf="@id/tvAge"
+            tools:text="Varón" />
+
+        <TextView
+            android:id="@+id/tvProfessions"
+            style="@style/detailGnomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/gnomeProfessions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHair" />
+
+        <TextView
+            android:id="@+id/tvProfessionsData"
+            style="@style/detailGnomeData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfessions"
+            tools:text="Albañil, carpintero y cura." />
+
+        <TextView
+            android:id="@+id/tvFriends"
+            style="@style/detailGnomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/gnomeFriends"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfessionsData" />
+
+        <TextView
+            android:id="@+id/tvFriendsData"
+            style="@style/detailGnomeData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFriends"
+            tools:text="Pablo, Pedro y Juan." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
