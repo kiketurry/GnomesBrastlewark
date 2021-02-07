@@ -13,8 +13,10 @@ A parte de las librerías propias, de Android y testing se han añadido:
 
 ### Curiosidades
 * Se ha hecho un método para determinar el sexo de los gnomos en función a las vocales de sus nombres.
-> La 'A' y la 'I' suman 2 puntos y 1 respectivamente para determinar que sea mujer
-> La 'O' y la 'U' suman 2 puntos y 1 respectivamente para determinar que sea varón
+> La 'A' y la 'I' suman 2 puntos y 1 respectivamente para determinar que sea mujer.
+>
+> La 'O' y la 'U' suman 2 puntos y 1 respectivamente para determinar que sea varón.
+>
 > Y en caso de empate se considera hermafrodita.
 
 * Se ha realizado el filtrado de los gnomos en función del nombre.
