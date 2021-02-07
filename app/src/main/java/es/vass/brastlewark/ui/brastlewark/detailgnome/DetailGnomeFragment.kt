@@ -6,13 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.model.GlideUrl
-import com.bumptech.glide.load.model.LazyHeaders
-import com.bumptech.glide.request.RequestOptions
 import es.vass.brastlewark.R
 import es.vass.brastlewark.data.domain.model.brastlewark.GnomeModel
-import es.vass.brastlewark.databinding.FragmentBrastlewarkGnokmeDetailBinding
+import es.vass.brastlewark.databinding.FragmentBrastlewarkGnomeDetailBinding
 import es.vass.brastlewark.extensions.glideWithHeaders
 import es.vass.brastlewark.extensions.gone
 import es.vass.brastlewark.extensions.invisible
@@ -21,13 +17,13 @@ import es.vass.brastlewark.injection.InjectionSingleton
 import es.vass.brastlewark.ui.base.BaseFragment
 import es.vass.brastlewark.ui.brastlewark.BrastlewarkActivity
 
-class DetailGnomeFragment : BaseFragment<FragmentBrastlewarkGnokmeDetailBinding>() {
+class DetailGnomeFragment : BaseFragment<FragmentBrastlewarkGnomeDetailBinding>() {
     override val TAG: String? get() = DetailGnomeFragment::class.qualifiedName
 
     lateinit var detailGnomeViewModel: DetailGnomeViewModel
 
     override fun inflateBinding() {
-        binding = FragmentBrastlewarkGnokmeDetailBinding.inflate(layoutInflater)
+        binding = FragmentBrastlewarkGnomeDetailBinding.inflate(layoutInflater)
     }
 
     override fun setupViewModel() {
